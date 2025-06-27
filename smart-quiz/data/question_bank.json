@@ -1,0 +1,2010 @@
+{
+  "quiz_id": "amazon_sde_quiz_001",
+  "goal": "Amazon SDE",
+  "questions": [
+    {
+      "type": "mcq",
+      "question": "In a Hierarchical database, a hashing function is used to locate the _______.",
+      "options": {
+        "A": "Collision",
+        "B": "Root",
+        "C": "Foreign Key",
+        "D": "Records"
+      },
+      "answer": "B",
+      "difficulty": "beginner",
+      "topic": "Database Models"
+    },
+    {
+      "type": "mcq",
+      "question": "Select operation in SQL is equivalent to",
+      "options": {
+        "A": "the selection operation in relational algebra",
+        "B": "the selection operation in relational algebra, except that select in SQL retains duplicates",
+        "C": "the projection operation in relational algebra",
+        "D": "the projection operation in relational algebra, except that select in SQL retains duplicates"
+      },
+      "answer": "D",
+      "difficulty": "intermediate",
+      "topic": "Relational Algebra"
+    },
+    {
+      "type": "mcq",
+      "question": "A database table T1 has 2000 records and occupies 80 disk blocks. Another table T2 has 400 records and occupies 20 disk blocks. These two tables have to be joined as per a specified join condition that needs to be evaluated for every pair of records from these two tables. The memory buffer space available can hold exactly one block of records for T1 and one block of records for T2 simultaneously at any point in time. No index is available on either table. If Nested-loop join algorithm is employed to perform the join, with the most appropriate choice of table to be used in outer loop, the number of block accesses required for reading the data are",
+      "options": {
+        "A": "800000",
+        "B": "40080",
+        "C": "32020",
+        "D": "100"
+      },
+      "answer": "C",
+      "difficulty": "advanced",
+      "topic": "Query Processing"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following related to snowflake schema is true?",
+      "options": {
+        "A": "Each dimension is represented by a single dimensional table",
+        "B": "Maintenance efforts are less",
+        "C": "Dimension tables are normalised",
+        "D": "It is not an extension of star schema"
+      },
+      "answer": "C",
+      "difficulty": "intermediate",
+      "topic": "Data Warehousing"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following command is used to delete a table in SQL?",
+      "options": {
+        "A": "delete",
+        "B": "truncate",
+        "C": "remove",
+        "D": "drop"
+      },
+      "answer": "D",
+      "difficulty": "beginner",
+      "topic": "SQL"
+    },
+    {
+      "type": "short_answer",
+      "question": "What is the best indexing mechanism for a query that counts how many male customers have a rating of 5 (where rating is integer 1-5 and gender is binary)?",
+      "answer": "Bit-mapped hashing",
+      "difficulty": "advanced",
+      "topic": "Indexing"
+    },
+    {
+      "type": "short_answer",
+      "question": "When is an index considered clustered?",
+      "answer": "When the data records of the file are organized in the same order as the data entries of the index.",
+      "difficulty": "intermediate",
+      "topic": "Indexing"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following statements are TRUE about an SQL query? P : An SQL query can contain a HAVING clause even if it does not have a GROUP BY clause Q : An SQL query can contain a HAVING clause only if it has a GROUP BY clause R : All attributes used in the GROUP BY clause must appear in the SELECT clause S : Not all attributes used in the GROUP BY clause need to appear in the SELECT clause",
+      "options": {
+        "A": "P and R",
+        "B": "P and S",
+        "C": "Q and R",
+        "D": "Q and S"
+      },
+      "answer": "B",
+      "difficulty": "advanced",
+      "topic": "SQL Queries"
+    },
+    {
+      "type": "mcq",
+      "question": "In the index allocation scheme of blocks to a file, the maximum possible size of the file depends on :",
+      "options": {
+        "A": "the size of the blocks, and the size of the address of the blocks.",
+        "B": "the number of blocks used for the index, and the size of the blocks.",
+        "C": "the size of the blocks, the number of blocks used for the index, and the size of the address of the blocks.",
+        "D": "None of these"
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "File Organization"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following related to snowflake schema is true?",
+      "options": {
+        "A": "Each dimension is represented by a single dimensional table",
+        "B": "Maintenance efforts are less",
+        "C": "Dimension tables are normalised",
+        "D": "It is not an extension of star schema"
+      },
+      "answer": "C",
+      "difficulty": "intermediate",
+      "topic": "Data Warehousing"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following is correct?",
+      "options": {
+        "A": "B-trees are for storing data on disk and B+ trees are for main memory.",
+        "B": "Range queries are faster on B+ trees.",
+        "C": "B-trees are for primary indexes and B+ trees are for secondary indexes.",
+        "D": "The height of a B+ tree is independent of the number of records."
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "Indexing"
+    },
+    {
+      "type": "mcq",
+      "question": "The statement that is executed automatically by the system as a side effect of the modification of the database is",
+      "options": {
+        "A": "backup",
+        "B": "assertion",
+        "C": "recovery",
+        "D": "trigger"
+      },
+      "answer": "D",
+      "difficulty": "beginner",
+      "topic": "Database Concepts"
+    },
+    {
+      "type": "short_answer",
+      "question": "Which RAID level gives block level striping with double distributed parity?",
+      "answer": "RAID 6",
+      "difficulty": "intermediate",
+      "topic": "Storage"
+    },
+    {
+      "type": "mcq",
+      "question": "Database applications were built directly on top of file system to overcome the following drawbacks of using file-systems: (i) Data redundancy and inconsistency (ii) Difficulty in accessing Data (iii) Data isolation (iv) Integrity problems",
+      "options": {
+        "A": "(i)",
+        "B": "(i) and (iv)",
+        "C": "(i), (ii) and (iii)",
+        "D": "(i), (ii), (iii) and (iv)"
+      },
+      "answer": "D",
+      "difficulty": "beginner",
+      "topic": "Database Concepts"
+    },
+    {
+      "type": "mcq",
+      "question": "A data file consisting of 1,50,000 student-records is stored on a hard disk with block size of 4096 bytes. The data file is sorted on the primary key RollNo. The size of a record pointer for this disk is 7 bytes. Each student-record has a candidate key attribute called ANum of size 12 bytes. Suppose an index file with records consisting of two fields, ANum value and the record pointer the corresponding student record, is built and stored on the same disk. Assume that the records of data file and index file are not split across disk blocks. The number of blocks in the index file is ________ .",
+      "options": {
+        "A": "698",
+        "B": "898",
+        "C": "899",
+        "D": "4096"
+      },
+      "answer": "A",
+      "difficulty": "advanced",
+      "topic": "Indexing"
+    },
+    {
+      "type": "mcq",
+      "question": "The level of aggregation of information required for operational control is",
+      "options": {
+        "A": "Detailed",
+        "B": "Aggregate",
+        "C": "Qualitative",
+        "D": "None of the above"
+      },
+      "answer": "A",
+      "difficulty": "beginner",
+      "topic": "Information Systems"
+    },
+    {
+      "type": "mcq",
+      "question": "A clustering index is defined on the fields which are of type",
+      "options": {
+        "A": "non-key and ordering",
+        "B": "non-key and non-ordering",
+        "C": "key and ordering",
+        "D": "key and non-ordering"
+      },
+      "answer": "A",
+      "difficulty": "beginner",
+      "topic": "Indexing"
+    },
+    {
+      "type": "mcq",
+      "question": "Standard planning algorithms assume environment to be ________.",
+      "options": {
+        "A": "Both deterministic and fully observable",
+        "B": "Neither deterministic nor fully observable",
+        "C": "Deterministic but not fully observable",
+        "D": "Not deterministic but fully observable"
+      },
+      "answer": "A",
+      "difficulty": "intermediate",
+      "topic": "AI Planning"
+    },
+    {
+      "type": "mcq",
+      "question": "We can show that the clique problem is NP-hard by proving that",
+      "options": {
+        "A": "CLIQUE ≤ P 3-CNF_SAT",
+        "B": "CLIQUE ≤ P VERTEX_COVER",
+        "C": "CLIQUE ≤ P SUBSET_SUM",
+        "D": "None of the above"
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "Complexity Theory"
+    },
+    {
+      "type": "mcq",
+      "question": "For parameters a and b, both of which are ω(1), T(n)=T(n^{1/a})+1, and T(b)=1. Then T(n) is",
+      "options": {
+        "A": "Θ(log_a log_b n)",
+        "B": "Θ(log_ab n)",
+        "C": "Θ(log_b log_a n)",
+        "D": "Θ(log_2 log_2 n)"
+      },
+      "answer": "A",
+      "difficulty": "advanced",
+      "topic": "Recurrence Relations"
+    },
+    {
+      "type": "mcq",
+      "question": "The necessary condition for using binary search in an array is :-",
+      "options": {
+        "A": "The array should not be too long",
+        "B": "The array should of more size",
+        "C": "The array should be sorted",
+        "D": "None of these"
+      },
+      "answer": "C",
+      "difficulty": "beginner",
+      "topic": "Algorithms"
+    },
+    {
+      "type": "mcq",
+      "question": "Match the following:\nList - I\n(a) Sequential Search\n(b) Branch-and-bound\n(c) Exponential Search\n(d) Binary Search\nList - II\n(i) Dynamic programming principle\n(ii) repeatedly double index\n(iii) O(LogN)\n(iv) O(N)\ncodes:\n(a) (b) (c) (d)\n(1) (i) (iv) (iii) (ii)\n(2) (iv) (i) (ii) (iii)\n(3) (i) (iv) (ii) (iii)\n(4) (iv) (ii) (i) (iii)",
+      "options": {
+        "A": "(1)",
+        "B": "(2)",
+        "C": "(3)",
+        "D": "(4)"
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "Algorithms"
+    },
+    {
+      "type": "short_answer",
+      "question": "Number of comparisons required for an unsuccessful search of an element in a sequential search, organized, fixed length, symbol table of length L is",
+      "answer": "L",
+      "difficulty": "intermediate",
+      "topic": "Data Structures"
+    },
+    {
+      "type": "mcq",
+      "question": "The time taken by binary search algorithm to search a key in a sorted array of n elements is",
+      "options": {
+        "A": "O ( log_2 n )",
+        "B": "O ( n )",
+        "C": "O ( n log_2 n )",
+        "D": "O ( n^2 )"
+      },
+      "answer": "A",
+      "difficulty": "beginner",
+      "topic": "Algorithms"
+    },
+    {
+      "type": "mcq",
+      "question": "Assuming P != NP, which of the following is true ?\n(A) NP-complete = NP\n(B) NP-complete cap P = Phi\n(C) NP-hard = NP\n(D) P = NP-complete",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "Complexity Theory"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following is true about NP-Complete and NP-Hard problems.",
+      "options": {
+        "A": "If we want to prove that a problem X is NP-Hard, we take a known NP-Hard problem Y and reduce Y to X",
+        "B": "The first problem that was proved as NP-complete was the circuit satisfiability problem.",
+        "C": "NP-complete is a subset of NP Hard",
+        "D": "All of the above"
+      },
+      "answer": "D",
+      "difficulty": "intermediate",
+      "topic": "Complexity Theory"
+    },
+    {
+      "type": "mcq",
+      "question": "Let SHAM₃ be the problem of finding a Hamiltonian cycle in a graph G = (V,E) with V divisible by 3 and DHAM₃ be the problem of determining if a Hamiltonian cycle exists in such graphs. Which one of the following is true?",
+      "options": {
+        "A": "Both DHAM₃ and SHAM₃ are NP-hard",
+        "B": "SHAM₃ is NP-hard, but DHAM₃ is not",
+        "C": "DHAM₃ is NP-hard, but SHAM₃ is not",
+        "D": "Neither DHAM₃ nor SHAM₃ is NP-hard"
+      },
+      "answer": "A",
+      "difficulty": "advanced",
+      "topic": "Graph Theory"
+    },
+    {
+      "type": "short_answer",
+      "question": "Consider the following two problems of graph. 1) Given a graph, find if the graph has a cycle that visits every vertex exactly once except the first visited vertex which must be visited again to complete the cycle. 2) Given a graph, find if the graph has a cycle that visits every edge exactly once. Which of the following is true about above two problems? (Write the correct statement about the problem sets.)",
+      "answer": "Problem 1 belongs NP Complete set and 2 belongs to P",
+      "difficulty": "intermediate",
+      "topic": "Graph Theory"
+    },
+    {
+      "type": "short_answer",
+      "question": "A problem in NP is NP-complete if _______. (State the essential property in one sentence.)",
+      "answer": "The 3-SAT problem can be reduced to it in polynomial time",
+      "difficulty": "intermediate",
+      "topic": "Complexity Theory"
+    },
+    {
+      "type": "short_answer",
+      "question": "In a complete k-ary tree, every internal node has exactly k children. The number of leaves in such a tree with n internal nodes is: (Write the formula/answer)",
+      "answer": "n(k - 1) + 1",
+      "difficulty": "beginner",
+      "topic": "Data Structures"
+    },
+    {
+      "type": "short_answer",
+      "question": "The minimum number of comparisons required to determine if an integer appears more than n/2 times in a sorted array of n integers is _______.",
+      "answer": "θ(logn)",
+      "difficulty": "intermediate",
+      "topic": "Algorithms"
+    },
+    {
+      "type": "short_answer",
+      "question": "The minimum number of arithmetic operations required to evaluate the polynomial P(X) = X^5 + 4X^3 + 6X + 5 for a given value of X using only one temporary variable is _______.",
+      "answer": "7",
+      "difficulty": "intermediate",
+      "topic": "Mathematics"
+    },
+    {
+      "type": "short_answer",
+      "question": "The cube root of a natural number n is defined as the largest natural number m such that m^3 ≤ n. The complexity of computing the cube root of n (n is represented in binary notation) is _______.",
+      "answer": "O((log n)^k) for some constant k > 0, but not O((log log n)^m) for any constant m > 0",
+      "difficulty": "advanced",
+      "topic": "Algorithms"
+    },
+    {
+      "type": "short_answer",
+      "question": "Given an array that represents elements of arithmetic progression in order. It is also given that one element is missing in the progression, the worst case time complexity to find the missing element efficiently is _______.",
+      "answer": "θ(logn)",
+      "difficulty": "intermediate",
+      "topic": "Algorithms"
+    },
+    {
+      "type": "short_answer",
+      "question": "The infix expression A + (B - C) * D is correctly represented in prefix notation as _______.",
+      "answer": "+ A * - B C D",
+      "difficulty": "intermediate",
+      "topic": "Data Structures"
+    },
+    {
+      "type": "short_answer",
+      "question": "Which of the following is not a backtracking algorithm? (Write the algorithm's name)",
+      "answer": "Tower of hanoi",
+      "difficulty": "intermediate",
+      "topic": "Algorithms"
+    },
+    {
+      "type": "short_answer",
+      "question": "Which of the following standard algorithms is not Dynamic Programming based? (Write the algorithm's name)",
+      "answer": "Prim's Minimum Spanning Tree",
+      "difficulty": "intermediate",
+      "topic": "Algorithms"
+    },
+    {
+      "type": "mcq",
+      "question": "The subset-sum problem is defined as follows. Given a set of n positive integers, S = {a1, a2, a3, ..., an} and positive integer W, is there a subset of S whose elements sum to W? A dynamic program for solving this problem uses a 2-dimensional Boolean array X, with n rows and W+1 columns. X[i, j], 1 <= i <= n, 0 <= j <= W, is TRUE if and only if there is a subset of {a1, a2, ..., ai} whose elements sum to j. Which of the following is valid for 2 <= i <= n and ai <= j <= W?",
+      "options": {
+        "A": "X[i, j] = X[i-1, j] ∨ X[i, j-ai]",
+        "B": "X[i, j] = X[i-1, j] ∨ X[i-1, j-ai]",
+        "C": "X[i, j] = X[i-1, j] ∧ X[i, j-ai]",
+        "D": "X[i, j] = X[i-1, j] ∧ X[i-1, j-ai]"
+      },
+      "answer": "B",
+      "difficulty": "advanced",
+      "topic": "Dynamic Programming"
+    },
+    {
+      "type": "short_answer",
+      "question": "Four matrices M1, M2, M3 and M4 of dimensions pxq, qxr, rxs and sxt respectively can be multiplied in several ways with different number of total scalar multiplications. For example, when multiplied as ((M1 X M2) X (M3 X M4)), the total number of multiplications is pqr + rst + prt. When multiplied as (((M1 X M2) X M3) X M4), the total number of scalar multiplications is pqr + prs + pst. If p = 10, q = 100, r = 20, s = 5 and t = 80, then the number of scalar multiplications needed is",
+      "answer": "19000",
+      "difficulty": "advanced",
+      "topic": "Matrix Chain Multiplication"
+    },
+    {
+      "type": "short_answer",
+      "question": "Consider two strings A = \"qpqrr\" and B = \"pqpqrqp\". Let x be the length of the longest common subsequence (not necessarily contiguous) between A and B and let y be the number of such longest common subsequences between A and B. Then x + 10y = ___.",
+      "answer": "43",
+      "difficulty": "intermediate",
+      "topic": "Dynamic Programming"
+    },
+    {
+      "type": "mcq",
+      "question": "Suppose the letters a, b, c, d, e, f have probabilities 1/2, 1/4, 1/8, 1/16, 1/32, 1/32 respectively. Which of the following is the Huffman code for the letter a, b, c, d, e, f?",
+      "options": {
+        "A": "0, 10, 110, 1110, 11110, 11111",
+        "B": "11, 10, 011, 010, 001, 000",
+        "C": "11, 10, 01, 001, 0001, 0000",
+        "D": "110, 100, 010, 000, 001, 111"
+      },
+      "answer": "A",
+      "difficulty": "advanced",
+      "topic": "Huffman Coding"
+    },
+    {
+      "type": "mcq",
+      "question": "Suppose the letters a, b, c, d, e, f have probabilities 1/2, 1/4, 1/8, 1/16, 1/32, 1/32 respectively. What is the average length of Huffman codes?",
+      "options": {
+        "A": "3",
+        "B": "2.1875",
+        "C": "2.25",
+        "D": "1.9375"
+      },
+      "answer": "D",
+      "difficulty": "advanced",
+      "topic": "Huffman Coding"
+    },
+    {
+      "type": "mcq",
+      "question": "Consider a job scheduling problem with 4 jobs J₁, J₂, J₃, J₄ and with corresponding deadlines: (d₁, d₂, d₃, d₄) = (4, 2, 4, 2). Which of the following is not a feasible schedule without violating any job schedule?",
+      "options": {
+        "A": "J₂, J₄, J₁, J₃",
+        "B": "J₄, J₁, J₂, J₃",
+        "C": "J₄, J₂, J₁, J₃",
+        "D": "J₄, J₂, J₃, J₁"
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "Job Scheduling"
+    },
+    {
+      "type": "short_answer",
+      "question": "Consider a graph G=(V, E), where V = {v₁, v₂, ..., v₁₀₀}, E = {(vi, vj) | 1 ≤ i < j ≤ 100} and weight of the edge (vi, vj) is |i-j|. The weight of minimum spanning tree of G is ________.",
+      "answer": "99",
+      "difficulty": "intermediate",
+      "topic": "Graph Theory"
+    },
+    {
+      "type": "mcq",
+      "question": "Let P be an array containing n integers. Let t be the lowest upper bound on the number of comparisons of the array elements, required to find the minimum and maximum values in an arbitrary array of n elements. Which one of the following choices is correct?",
+      "options": {
+        "A": "t > 2n-2",
+        "B": "t > 3[n/2] and t ≤ 2n-2",
+        "C": "t > n and t ≤ 3[n/2]",
+        "D": "t > [log₂(n)] and t ≤ n"
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "Algorithms"
+    },
+    {
+      "type": "mcq",
+      "question": "A binary search tree T contains n distinct elements. What is the time complexity of picking an element in T that is smaller than the maximum element in T?",
+      "options": {
+        "A": "θ(nlogn)",
+        "B": "θ(n)",
+        "C": "θ(logn)",
+        "D": "θ(1)"
+      },
+      "answer": "B",
+      "difficulty": "beginner",
+      "topic": "Data Structures"
+    },
+    {
+      "type": "mcq",
+      "question": "Assume that we use Bubble Sort to sort n distinct elements in ascending order. When does the best case of Bubble Sort occur?",
+      "options": {
+        "A": "When elements are sorted in ascending order",
+        "B": "When elements are sorted in descending order",
+        "C": "When elements are not sorted by any order",
+        "D": "There is no best case for Bubble Sort. It always takes O(n*n) time"
+      },
+      "answer": "A",
+      "difficulty": "beginner",
+      "topic": "Sorting Algorithms"
+    },
+    {
+      "type": "mcq",
+      "question": "Quick sort is run on 2 inputs shown below to sort in ascending order. A. 1, 2, 3, ..., n B. n, n-1, n-2, ..., 1. Let C1 and C2 be the number of comparisons made for A and B respectively. Then",
+      "options": {
+        "A": "C1 > C2",
+        "B": "C1 = C2",
+        "C": "C1 < C2",
+        "D": "Cannot say anything for arbitrary n"
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "Sorting Algorithms"
+    },
+    {
+      "type": "mcq",
+      "question": "If we use Radix Sort to sort n integers in the range (n^{k/2}, n^k], for some k>0 which is independent of n, the time taken would be?",
+      "options": {
+        "A": "θ(n)",
+        "B": "θ(kn)",
+        "C": "θ(nlogn)",
+        "D": "θ(n^2)"
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "Sorting Algorithms"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following algorithm design technique is used in merge sort?",
+      "options": {
+        "A": "Greedy method",
+        "B": "Backtracking",
+        "C": "Dynamic programming",
+        "D": "Divide and Conquer"
+      },
+      "answer": "D",
+      "difficulty": "beginner",
+      "topic": "Algorithm Design Techniques"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following algorithms sort n integers, having the range 0 to (n^2 - 1), in ascending order in O(n) time?",
+      "options": {
+        "A": "Selection sort",
+        "B": "Bubble sort",
+        "C": "Radix sort",
+        "D": "Insertion sort"
+      },
+      "answer": "C",
+      "difficulty": "beginner",
+      "topic": "Sorting Algorithms"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following is not O(n^2)?",
+      "options": {
+        "A": "(15) * n^2",
+        "B": "n^{1.98}",
+        "C": "n^3 / (sqrt(n))",
+        "D": "(20) * n^2"
+      },
+      "answer": "C",
+      "difficulty": "intermediate",
+      "topic": "Complexity Analysis"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following is not true about comparison-based sorting algorithms?",
+      "options": {
+        "A": "The minimum possible time complexity of a comparison-based sorting algorithm is O(nlog(n)) for a random input array",
+        "B": "Any comparison based sorting algorithm can be made stable by using position as a criteria when two elements are compared",
+        "C": "Counting Sort is not a comparison based sorting algorithm",
+        "D": "Heap Sort is not a comparison based sorting algorithm."
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "Sorting Algorithms"
+    },
+    {
+      "type": "mcq",
+      "question": "The following statement is valid. log(n!) = θ(n log n).",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "answer": "A",
+      "difficulty": "beginner",
+      "topic": "Mathematical Foundations"
+    },
+    {
+      "type": "mcq",
+      "question": "What is the time complexity of Floyd–Warshall algorithm to calculate all pair shortest path in a graph with n vertices?",
+      "options": {
+        "A": "O(n^{2log(n)})",
+        "B": "Theta(n^{2log(n)})",
+        "C": "Theta(n^4)",
+        "D": "Theta(n^3)"
+      },
+      "answer": "D",
+      "difficulty": "intermediate",
+      "topic": "Graph Algorithms"
+    },
+    {
+      "type": "mcq",
+      "question": "External entities in DFD are shown by:-",
+      "options": {
+        "A": "Ellipse",
+        "B": "Rectangle",
+        "C": "Circle",
+        "D": "Hexagon"
+      },
+      "answer": "B",
+      "difficulty": "beginner",
+      "topic": "Software Engineering"
+    },
+    {
+      "type": "mcq",
+      "question": "B+ Trees are considered BALANCED because",
+      "options": {
+        "A": "the lengths of the paths from the root to all leaf nodes are all equal.",
+        "B": "the lengths of the paths from the root to all leaf nodes differ from each other by at most 1.",
+        "C": "the number of children of any two non-leaf sibling nodes differ by at most 1.",
+        "D": "the number of records in any two leaf nodes differ by at most 1."
+      },
+      "answer": "A",
+      "difficulty": "beginner",
+      "topic": "Data Structures"
+    },
+    {
+      "type": "mcq",
+      "question": "In a file which contains 1 million records and the order of the tree is 100, then what is the maximum number of nodes to be accessed if B+ tree index is used?",
+      "options": {
+        "A": "5",
+        "B": "4",
+        "C": "3",
+        "D": "10"
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "B+ Tree"
+    },
+    {
+      "type": "mcq",
+      "question": "A B-Tree used as an index for a large database table has four levels including the root node. If a new key is inserted in this index, then the maximum number of nodes that could be newly created in the process are",
+      "options": {
+        "A": "5",
+        "B": "4",
+        "C": "1",
+        "D": "2"
+      },
+      "answer": "A",
+      "difficulty": "intermediate",
+      "topic": "B-Tree"
+    },
+    {
+      "type": "mcq",
+      "question": "The order of an internal node in a B+ tree index is the maximum number of children it can have. Suppose that a child pointer takes 6 bytes, the search field value takes 14 bytes, and the block size is 512 bytes. What is the order of the internal node?",
+      "options": {
+        "A": "24",
+        "B": "25",
+        "C": "26",
+        "D": "27"
+      },
+      "answer": "C",
+      "difficulty": "advanced",
+      "topic": "B+ Tree"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following is FALSE about B/B+ tree",
+      "options": {
+        "A": "B/B+ trees grow upward while Binary Search Trees grow downward.",
+        "B": "Time complexity of search operation in B/B+ tree is better than Red Black Trees in general.",
+        "C": "Number of child pointers in a B/B+ tree node is always equals to number of keys in it plus one.",
+        "D": "A B/B+ tree is defined by a term minimum degree. And minimum degree depends on hard disk block size, key and address sizes."
+      },
+      "answer": "B",
+      "difficulty": "advanced",
+      "topic": "B/B+ Tree"
+    },
+    {
+      "type": "mcq",
+      "question": "A program P reads in 500 integers in the range [0..100] representing the scores of 500 students. It then prints the frequency of each score above 50. What would be the best way for P to store the frequencies?",
+      "options": {
+        "A": "An array of 50 numbers",
+        "B": "An array of 100 numbers",
+        "C": "An array of 500 numbers",
+        "D": "A dynamically allocated array of 550 numbers"
+      },
+      "answer": "A",
+      "difficulty": "beginner",
+      "topic": "Arrays"
+    },
+    {
+      "type": "mcq",
+      "question": "A three dimensional array in ‘C++’ is declared as int A[x][y][z]. Consider that array elements are stored in row major order and indexing begins from 0. Here, the address of an item at the location A[p][q][r] can be computed as follows (where w is the word length of an integer):",
+      "options": {
+        "A": "&A[0][0][0] + w(y * z * q + z * p + r)",
+        "B": "&A[0][0][0] + w(y * z * p + z * q + r)",
+        "C": "&A[0][0][0] + w(x * y * p + z * q + r)",
+        "D": "&A[0][0][0] + w(x * y * q + z * p + r)"
+      },
+      "answer": "B",
+      "difficulty": "advanced",
+      "topic": "Arrays"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following correctly declares an array?",
+      "options": {
+        "A": "int geeks[20];",
+        "B": "int geeks;",
+        "C": "geeks{20};",
+        "D": "array geeks[20];"
+      },
+      "answer": "A",
+      "difficulty": "beginner",
+      "topic": "Arrays"
+    },
+    {
+      "type": "mcq",
+      "question": "Consider a hash table of size seven, with starting index zero, and a hash function (7x+3) mod 4. Assuming the hash table is initially empty, which of the following is the contents of the table when the sequence 1, 3, 8, 10 is inserted into the table using closed hashing? Here “__” denotes an empty location in the table.",
+      "options": {
+        "A": "3, 10, 1, 8, __, __, __",
+        "B": "1, 3, 8, 10, __, __, __",
+        "C": "1, __, 3, __, 8, __, 10",
+        "D": "3, 10, __, __, 8, __, __"
+      },
+      "answer": "A",
+      "difficulty": "intermediate",
+      "topic": "Hashing"
+    },
+    {
+      "type": "mcq",
+      "question": "Given a hash table T with 25 slots that stores 2000 elements, the load factor α for T is __________",
+      "options": {
+        "A": "80",
+        "B": "0.0125",
+        "C": "8000",
+        "D": "1.25"
+      },
+      "answer": "A",
+      "difficulty": "advanced",
+      "topic": "Hashing"
+    },
+    {
+      "type": "mcq",
+      "question": "An advantage of chained hash table (external hashing) over the open addressing scheme is",
+      "options": {
+        "A": "Worst case complexity of search operations is less",
+        "B": "Space used is less",
+        "C": "Deletion is easier",
+        "D": "None of the above"
+      },
+      "answer": "C",
+      "difficulty": "beginner",
+      "topic": "Hashing"
+    },
+    {
+      "type": "mcq",
+      "question": "Let G be a weighted undirected graph and e be an edge with maximum weight in G. Suppose there is a minimum weight spanning tree in G containing the edge e. Which of the following statements is always TRUE?",
+      "options": {
+        "A": "There exists a cutset in G having all edges of maximum weight.",
+        "B": "There exists a cycle in G having all edges of maximum weight",
+        "C": "Edge e cannot be contained in a cycle.",
+        "D": "All edges in G have the same weight"
+      },
+      "answer": "A",
+      "difficulty": "advanced",
+      "topic": "Graph Theory"
+    },
+    {
+      "type": "mcq",
+      "question": "Trie is also known as _____",
+      "options": {
+        "A": "Treap",
+        "B": "Binomial Tree",
+        "C": "2-3 Tree",
+        "D": "Digital Tree"
+      },
+      "answer": "D",
+      "difficulty": "beginner",
+      "topic": "Trees"
+    },
+    {
+      "type": "mcq",
+      "question": "What is the worst case efficiency for a path compression algorithm?",
+      "options": {
+        "A": "O(M log N)",
+        "B": "O(N log N)",
+        "C": "O(log N)",
+        "D": "O(N)"
+      },
+      "answer": "A",
+      "difficulty": "intermediate",
+      "topic": "Disjoint Set"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following is an advantage of adjacency list representation over adjacency matrix representation of a graph?",
+      "options": {
+        "A": "In adjacency list representation, space is saved for sparse graphs.",
+        "B": "DFS and BSF can be done in O(V + E) time for adjacency list representation. These operations take O(V^2) time in adjacency matrix representation. Here is V and E are number of vertices and edges respectively.",
+        "C": "Adding a vertex in adjacency list representation is easier than adjacency matrix representation.",
+        "D": "All of the above"
+      },
+      "answer": "D",
+      "difficulty": "advanced",
+      "topic": "Graph Representation"
+    },
+    {
+      "type": "mcq",
+      "question": "What is the worst case possible height of AVL tree?",
+      "options": {
+        "A": "2Logn (Assume base of log is 2)",
+        "B": "1.44log n (Assume base of log is 2)",
+        "C": "Depends upon implementation",
+        "D": "Theta(n)"
+      },
+      "answer": "B",
+      "difficulty": "advanced",
+      "topic": "AVL Tree"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following is TRUE?",
+      "options": {
+        "A": "The cost of searching an AVL tree is θ (log n) but that of a binary search tree is O(n)",
+        "B": "The cost of searching an AVL tree is θ (log n) but that of a complete binary tree is θ (n log n)",
+        "C": "The cost of searching a binary search tree is O (log n ) but that of an AVL tree is θ(n)",
+        "D": "The cost of searching an AVL tree is θ (n log n) but that of a binary search tree is O(n)"
+      },
+      "answer": "A",
+      "difficulty": "intermediate",
+      "topic": "AVL Tree"
+    },
+    {
+      "type": "mcq",
+      "question": "What is the worst case time complexity of inserting n^2 elements into an AVL-tree with n elements initially ?",
+      "options": {
+        "A": "Θ(n^4)",
+        "B": "Θ(n^2)",
+        "C": "Θ(n^2 log n)",
+        "D": "Θ(n^3)"
+      },
+      "answer": "C",
+      "difficulty": "beginner",
+      "topic": "AVL Tree"
+    },
+    {
+      "type": "mcq",
+      "question": "The postorder traversal of a binary tree is 8, 9, 6, 7, 4, 5, 2, 3, 1. The inorder traversal of the same tree is 8, 6, 9, 4, 7, 2, 5, 1, 3. The height of a tree is the length of the longest path from the root to any leaf. The height of the binary tree above is ________ .",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "answer": "C",
+      "difficulty": "advanced",
+      "topic": "Binary Tree"
+    },
+    {
+      "type": "mcq",
+      "question": "The following numbers are inserted into an empty binary search tree in the given order: 10, 1, 3, 5, 15, 12, 16. What is the height of the binary search tree (the height is the maximum distance of a leaf node from the root)?",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "6"
+      },
+      "answer": "B",
+      "difficulty": "beginner",
+      "topic": "Binary Search Tree"
+    },
+    {
+      "type": "mcq",
+      "question": "When searching for the key value 60 in a binary search tree, nodes containing the key values 10, 20, 40, 50, 70, 80, 90 are traversed, not necessarily in the order given. How many different orders are possible in which these key values can occur on the search path from the root to the node containing the value 60?",
+      "options": {
+        "A": "35",
+        "B": "64",
+        "C": "128",
+        "D": "5040"
+      },
+      "answer": "C",
+      "difficulty": "advanced",
+      "topic": "Binary Search Tree"
+    },
+    {
+      "type": "mcq",
+      "question": "The average depth of a binary search tree is:",
+      "options": {
+        "A": "O(n^{0.5})",
+        "B": "O(n)",
+        "C": "O(log n)",
+        "D": "O(n log n)"
+      },
+      "answer": "C",
+      "difficulty": "intermediate",
+      "topic": "Binary Search Tree"
+    },
+    {
+      "type": "mcq",
+      "question": "Suppose the numbers 7, 5, 1, 8, 3, 6, 0, 9, 4, 2 are inserted in that order into an initially empty binary search tree. The binary search tree uses the usual ordering on natural numbers. What is the in-order traversal sequence of the resultant tree?",
+      "options": {
+        "A": "7 5 1 0 3 2 4 6 8 9",
+        "B": "0 2 4 3 1 6 5 9 8 7",
+        "C": "0 1 2 3 4 5 6 7 8 9",
+        "D": "9 8 6 4 2 3 0 1 5 7"
+      },
+      "answer": "C",
+      "difficulty": "advanced",
+      "topic": "Binary Search Tree"
+    },
+    {
+      "type": "mcq",
+      "question": "Consider a complete binary tree where the left and the right subtrees of the root are max-heaps. The lower bound for the number of operations to convert the tree to a heap is",
+      "options": {
+        "A": "Ω(logn)",
+        "B": "Ω(n)",
+        "C": "Ω(nlogn)",
+        "D": "Ω(n^2)"
+      },
+      "answer": "A",
+      "difficulty": "intermediate",
+      "topic": "Heap"
+    },
+    {
+      "type": "mcq",
+      "question": "Consider a binary tree with n nodes, where each node can have at most two children. The height of the tree is defined as the maximum number of edges between the root node and any leaf node. Which of the following statements is true regarding the height h of this binary tree?",
+      "options": {
+        "A": "The height of the tree is always equal to n-1.",
+        "B": "The height of the tree can be greater than or equal to n-1.",
+        "C": "The height of the tree is always equal to log₂(n).",
+        "D": "The height of the tree can be greater than or equal to log₂(n)."
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "Binary Tree"
+    },
+    {
+      "type": "mcq",
+      "question": "What is the worst-case number of arithmetic operations performed by recursive binary search on a sorted array of size n?",
+      "options": {
+        "A": "Θ(√n)",
+        "B": "Θ(log₂(n))",
+        "C": "Θ(n²)",
+        "D": "Θ(n)"
+      },
+      "answer": "B",
+      "difficulty": "beginner",
+      "topic": "Binary Search"
+    },
+    {
+      "type": "mcq",
+      "question": "The minimum number of stacks needed to implement a queue is",
+      "options": {
+        "A": "3",
+        "B": "1",
+        "C": "2",
+        "D": "4"
+      },
+      "answer": "C",
+      "difficulty": "beginner",
+      "topic": "Stack & Queue"
+    },
+    {
+      "type": "mcq",
+      "question": "Suppose a circular queue of capacity (n – 1) elements is implemented with an array of n elements. Assume that the insertion and deletion operation are carried out using REAR and FRONT as array index variables, respectively. Initially, REAR = FRONT = 0. The conditions to detect queue full and queue empty are",
+      "options": {
+        "A": "Full: (REAR+1) mod n == FRONT, empty: REAR == FRONT",
+        "B": "Full: (REAR+1) mod n == FRONT, empty: (FRONT+1) mod n == REAR",
+        "C": "Full: REAR == FRONT, empty: (REAR+1) mod n == FRONT",
+        "D": "Full: (FRONT+1) mod n == REAR, empty: REAR == FRONT"
+      },
+      "answer": "A",
+      "difficulty": "advanced",
+      "topic": "Queue"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following option is not correct?",
+      "options": {
+        "A": "If the queue is implemented with a linked list, keeping track of a front pointer, Only rear pointer s will change during an insertion into an non-empty queue.",
+        "B": "Queue data structure can be used to implement least recently used (LRU) page fault algorithm and Quick short algorithm.",
+        "C": "Queue data structure can be used to implement Quick short algorithm but not least recently used (LRU) page fault algorithm.",
+        "D": "Both (A) and (C)"
+      },
+      "answer": "A",
+      "difficulty": "advanced",
+      "topic": "Queue"
+    },
+    {
+      "type": "mcq",
+      "question": "Consider the following statements:\n  i. First-in-first out types of computations are efficiently supported by STACKS.\n  ii. Implementing LISTS on linked lists is more efficient than implementing LISTS on an array.\n  iii. Implementing QUEUES on a circular array is more efficient than implementing QUEUES on a linear array.\n  iv. Last-in-first-out type of computations are efficiently supported by QUEUES.\nWhich of the following is correct?",
+      "options": {
+        "A": "(ii) is true",
+        "B": "(i) and (ii) are true",
+        "C": "(iii) is true",
+        "D": "(ii) and (iv) are true"
+      },
+      "answer": "C",
+      "difficulty": "intermediate",
+      "topic": "Stack & Queue"
+    },
+    {
+      "type": "mcq",
+      "question": "Which one of the following is an application of Queue Data Structure?",
+      "options": {
+        "A": "When a resource is shared among multiple consumers.",
+        "B": "When data is transferred asynchronously (data not necessarily received at same rate as sent) between two processes",
+        "C": "Load Balancing",
+        "D": "All of the above"
+      },
+      "answer": "D",
+      "difficulty": "beginner",
+      "topic": "Queue"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following is the highest isolation level in transaction management?",
+      "options": {
+        "A": "Serializable",
+        "B": "Repeated Read",
+        "C": "Committed Read",
+        "D": "Uncommitted Read"
+      },
+      "answer": "A",
+      "difficulty": "beginner",
+      "topic": "Transaction Management"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following RAID level provides the highest Data Transfer Rate (Read/Write)?",
+      "options": {
+        "A": "RAID 1",
+        "B": "RAID 3",
+        "C": "RAID 4",
+        "D": "RAID 5"
+      },
+      "answer": "B",
+      "difficulty": "advanced",
+      "topic": "Storage"
+    },
+    {
+      "type": "mcq",
+      "question": "__________ rules used to limit the volume of log information that has to be handled and processed in the event of system failure involving the loss of volatile information.",
+      "options": {
+        "A": "Write-ahead log",
+        "B": "Check-pointing",
+        "C": "Log buffer",
+        "D": "Thomas"
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "Database Recovery"
+    },
+    {
+      "type": "mcq",
+      "question": "Suppose a database system crashes again while recovering from a previous crash. Assume checkpointing is not done by the database either during the transactions or during recovery. Which of the following statements is/are correct?",
+      "options": {
+        "A": "The same undo and redo list will be used while recovering again",
+        "B": "The system cannot recover any further",
+        "C": "All the transactions that are already undone and redone will not be recovered again",
+        "D": "The database will become inconsistent"
+      },
+      "answer": "A",
+      "difficulty": "advanced",
+      "topic": "Database Recovery"
+    },
+    {
+      "type": "mcq",
+      "question": "Assume the following information: Original timestamp value = 46 Receive timestamp value = 59 Transmit timestamp value = 60 Timestamp at arrival of packet = 69 Which of the following statements is correct?",
+      "options": {
+        "A": "Receive clock should go back by 3 milliseconds",
+        "B": "Transmit and Receive clocks are synchronized",
+        "C": "Transmit clock should go back by 3 milliseconds",
+        "D": "Receive clock should go ahead by 1 millisecond"
+      },
+      "answer": "A",
+      "difficulty": "advanced",
+      "topic": "Time Synchronization"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following concurrency control protocols ensure both conflict serializability and freedom from deadlock? I. 2-phase locking II. Time-stamp ordering",
+      "options": {
+        "A": "I only",
+        "B": "II only",
+        "C": "Both I and II",
+        "D": "Neither I nor II"
+      },
+      "answer": "B",
+      "difficulty": "advanced",
+      "topic": "Concurrency Control"
+    },
+    {
+      "type": "mcq",
+      "question": "The Relation Vendor Order (V_no, V_ord_no, V_name, Qty_sup, unit_price) is in 2NF because:",
+      "options": {
+        "A": "Non_key attribute V_name is dependent on V_no which is part of composite key",
+        "B": "Non_key attribute V_name is dependent on Qty_sup",
+        "C": "Key attribute Qty_sup is dependent on primary_key unit price",
+        "D": "Key attribute V_ord_no is dependent on primary_key unit price"
+      },
+      "answer": "A",
+      "difficulty": "advanced",
+      "topic": "Normalization"
+    },
+    {
+      "type": "mcq",
+      "question": "BCNF is not used for cases where a relation has",
+      "options": {
+        "A": "Two (or more) candidate keys",
+        "B": "Two candidate keys and composite",
+        "C": "The candidate key overlap",
+        "D": "Two mutually exclusive foreign keys"
+      },
+      "answer": "D",
+      "difficulty": "advanced",
+      "topic": "Normalization"
+    },
+    {
+      "type": "mcq",
+      "question": "Let R = ABCDE is a relational scheme with functional dependency set F = {A → B, B → C, AC → D}. The attribute closures of A and E are",
+      "options": {
+        "A": "ABCD, φ",
+        "B": "ABCD, E",
+        "C": "Φ, φ",
+        "D": "ABC, E"
+      },
+      "answer": "B",
+      "difficulty": "advanced",
+      "topic": "Functional Dependency"
+    },
+    {
+      "type": "mcq",
+      "question": "Consider the relation R (ABCDE): FD = { A → B, B → C, C → D, D → E} Find out the highest normal form.",
+      "options": {
+        "A": "1 NF",
+        "B": "2 NF",
+        "C": "3 NF",
+        "D": "BCNF"
+      },
+      "answer": "B",
+      "difficulty": "advanced",
+      "topic": "Normalization"
+    },
+    {
+      "type": "mcq",
+      "question": "The five items: A, B, C, D, and E are pushed in a stack, one after other starting from A. The stack is popped four items and each element is inserted in a queue. The two elements are deleted from the queue and pushed back on the stack. Now one item is popped from the stack. The popped item is",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "D",
+      "difficulty": "advanced",
+      "topic": "Stack & Queue"
+    },
+    {
+      "type": "mcq",
+      "question": "Stack A has the entries a, b, c (with a on top). Stack B is empty. An entry popped out of stack A can be printed immediately or pushed to stack B. An entry popped out of the stack B can be only be printed. In this arrangement, which of the following permutations of a, b, c are not possible?",
+      "options": {
+        "A": "b a c",
+        "B": "b c a",
+        "C": "c a b",
+        "D": "a b c"
+      },
+      "answer": "C",
+      "difficulty": "intermediate",
+      "topic": "Stack"
+    },
+    {
+      "type": "mcq",
+      "question": "The five items: A, B, C, D, and E are pushed in a stack, one after other starting from A. The stack is popped four items and each element is inserted in a queue. The two elements are deleted from the queue and pushed back on the stack. Now one item is popped from the stack. The popped item is",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "D"
+      },
+      "answer": "D",
+      "difficulty": "advanced",
+      "topic": "Stack & Queue"
+    },
+    {
+      "type": "mcq",
+      "question": "Which one of the following is an application of Stack Data Structure?",
+      "options": {
+        "A": "Managing function calls",
+        "B": "The stock span problem",
+        "C": "Arithmetic expression evaluation",
+        "D": "All of the above"
+      },
+      "answer": "D",
+      "difficulty": "beginner",
+      "topic": "Stack"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following is true about linked list implementation of stack?",
+      "options": {
+        "A": "In push operation, if new nodes are inserted at the beginning of linked list, then in pop operation, nodes must be removed from end.",
+        "B": "In push operation, if new nodes are inserted at the end, then in pop operation, nodes must be removed from the beginning.",
+        "C": "Both of the above",
+        "D": "None of the above"
+      },
+      "answer": "D",
+      "difficulty": "intermediate",
+      "topic": "Stack"
+    },
+    {
+      "type": "mcq",
+      "question": "Consider the following conditions:\n(a) The solution must be feasible, i.e. it must satisfy all the supply and demand constraints.\n(b) The number of positive allocations must be equal to m+n-1, where m is the number of rows and n is the number of columns.\n(c) All the positive allocations must be in independent positions.\nThe initial solution of a transportation problem is said to be non-degenerate basic feasible solution if it satisfies:\nCodes:",
+      "options": {
+        "A": "(a) and (b) only",
+        "B": "(a) and (c) only",
+        "C": "(b) and (c) only",
+        "D": "(a), (b) and (c)"
+      },
+      "answer": "D",
+      "difficulty": "advanced",
+      "topic": "Transportation Problem"
+    },
+    {
+      "type": "mcq",
+      "question": "What is the worst case time complexity of inserting n elements into an empty linked list, if the linked list needs to be maintained in sorted order ?",
+      "options": {
+        "A": "Θ(n)",
+        "B": "Θ(n log n)",
+        "C": "Θ(n^2)",
+        "D": "Θ(1)"
+      },
+      "answer": "C",
+      "difficulty": "advanced",
+      "topic": "Linked List"
+    },
+    {
+      "type": "mcq",
+      "question": "Let P be a singly linked list. Let Q be the pointer to an intermediate node x in the list. What is the worst-case time complexity of the best known algorithm to delete the node Q from the list?",
+      "options": {
+        "A": "O(n)",
+        "B": "O(log2 n)",
+        "C": "O(logn)",
+        "D": "O(1)"
+      },
+      "answer": "A",
+      "difficulty": "intermediate",
+      "topic": "Linked List"
+    },
+    {
+      "type": "mcq",
+      "question": "In the worst case, the number of comparisons needed to search a singly linked list of length n for a given element is",
+      "options": {
+        "A": "log(2*n)",
+        "B": "n/2",
+        "C": "log(2*n) -1",
+        "D": "n"
+      },
+      "answer": "D",
+      "difficulty": "beginner",
+      "topic": "Linked List"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following sorting algorithms can be used to sort a random linked list with minimum time complexity?",
+      "options": {
+        "A": "Insertion Sort",
+        "B": "Quick Sort",
+        "C": "Heap Sort",
+        "D": "Merge Sort"
+      },
+      "answer": "D",
+      "difficulty": "intermediate",
+      "topic": "Sorting"
+    },
+    {
+      "type": "mcq",
+      "question": "Relations produced from E - R Model will always be in _______.",
+      "options": {
+        "A": "1 NF",
+        "B": "2 NF",
+        "C": "3 NF",
+        "D": "4 NF"
+      },
+      "answer": "A",
+      "difficulty": "beginner",
+      "topic": "ER Model & Normalization"
+    },
+    {
+      "type": "mcq",
+      "question": "A relation r(A,B) in a relational database has 1200 tuples. The attribute A has integer values ranging from 6 to 20, and the attribute B has integer values ranging from 1 to 20. Assume that the attributes A and B are independently distributed. The estimated number of tuples in the output of σ_{(A>10)∨(B=18)}(r) is ____________.",
+      "options": {
+        "A": "820",
+        "B": "1200",
+        "C": "960",
+        "D": "1000"
+      },
+      "answer": "C",
+      "difficulty": "advanced",
+      "topic": "Relational Algebra & Estimation"
+    },
+    {
+      "type": "mcq",
+      "question": "In RDBMS, different classes of relations are created using ________ technique to prevent modification anomalies.",
+      "options": {
+        "A": "Functional Dependencies",
+        "B": "Data integrity",
+        "C": "Referential integrity",
+        "D": "Normal Forms"
+      },
+      "answer": "D",
+      "difficulty": "intermediate",
+      "topic": "Normalization"
+    },
+    {
+      "type": "mcq",
+      "question": "Relation R has eight attributes ABCDEFGH. Fields of R contain only atomic values. F = {CH -> G, A -> BC, B -> CFH, E -> A, F -> EG} is a set of functional dependencies (FDs) so that F+ is exactly the set of FDs that hold for R. How many candidate keys does the relation R have?",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      },
+      "answer": "B",
+      "difficulty": "advanced",
+      "topic": "Functional Dependency & Keys"
+    },
+    {
+      "type": "mcq",
+      "question": "Which of the following statements is FALSE about weak entity set?",
+      "options": {
+        "A": "Weak entities can be deleted automatically when their strong entity is deleted.",
+        "B": "Weak entity set avoids the data duplication and consequent possible inconsistencies caused by duplicating the key of the strong entity.",
+        "C": "A weak entity set has no primary keys unless attributes of the strong entity set on which it depends are included",
+        "D": "Tuples in a weak entity set are not partitioned according to their relationship with tuples in a strong entity set."
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "ER Model & Weak Entities"
+    },
+    {
+      "type": "mcq",
+      "question": "In functional dependency Armstrong inference rules refers to",
+      "options": {
+        "A": "Reflexivity, Augmentation and Decomposition",
+        "B": "Transitivity, Augmentation and Reflexivity",
+        "C": "Augmentation, Transitivity, Reflexivity and Decomposition",
+        "D": "Reflexivity, Transitivity and Decomposition"
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "Functional Dependency"
+    },
+    {
+      "type": "mcq",
+      "question": "Which operation is used to extract specified columns from a table?",
+      "options": {
+        "A": "Project",
+        "B": "Join",
+        "C": "Extract",
+        "D": "Substitute"
+      },
+      "answer": "A",
+      "difficulty": "beginner",
+      "topic": "Relational Algebra"
+    },
+    {
+      "type": "mcq",
+      "question": "A view of database that appears to an application program is known as",
+      "options": {
+        "A": "Schema",
+        "B": "Subschema",
+        "C": "Virtual table",
+        "D": "Index Table"
+      },
+      "answer": "B",
+      "difficulty": "beginner",
+      "topic": "Database Views"
+    },
+    {
+      "type": "mcq",
+      "question": "Let R₁ (a, b, c) and R₂ (x, y, z) be two relations in which a is the foreign key of R₁ that refers to the primary key of R₂. Consider following four options. (a)Insert into R₁ (b)Insert into R₂ (c)Delete from R₁ (d)Delete from R₂. Which of the following is correct about the referential integrity constraint with respect to above?",
+      "options": {
+        "A": "Operations (a) and (b) will cause violation.",
+        "B": "Operations (b) and (c) will cause violation.",
+        "C": "Operations (c) and (d) will cause violation.",
+        "D": "Operations (d) and (a) will cause violation."
+      },
+      "answer": "C",
+      "difficulty": "advanced",
+      "topic": "Referential Integrity"
+    },
+    {
+      "type": "mcq",
+      "question": "In E-R model, Y is the dominant entity and X is subordinate entity",
+      "options": {
+        "A": "None of the above",
+        "B": "If Y is deleted, then X is also deleted",
+        "C": "If Y is deleted, then X is not deleted",
+        "D": "If X is deleted, then Y is also deleted"
+      },
+      "answer": "B",
+      "difficulty": "intermediate",
+      "topic": "ER Model"
+    },
+    {
+      	"type": "short_answer",
+     	 "question": "In ________ operating system, special files are used to provide a mechanism to map physical device to file names",
+     	 "answer": "Unix",
+     	 "topic": "Unix OS",
+    	 "difficulty": "beginner"
+      } ,
+      {
+     	"type": "short_answer",
+     	"question": "In Unix operating system, when a process creates a new process using the fork() system call, Shared memory segments state is shared between the _______ process and child process?",
+     	"answer": "parent",
+     	"topic": "Unix OS",
+      	"difficulty": "beginner"
+      } ,
+         {
+      	"type": "short_answer",
+      	"question": "In UNIX, (mkdir PIS PIS/progs PIS/data) creates three subdirectories: ‘PIS’ and two subdirectories ‘_______’ and ‘data’ from just created subdirectory ‘PIS’.",
+      	"answer": "progs",
+      	"topic": "Unix Commands",
+      	"difficulty": "intermediate"
+         } ,
+         {
+      "type": "short_answer",
+      "question": "A user level process in Unix traps the signal sent on a Ctrl-C input, and has a signal handling routine that saves appropriate files before terminating the process. When a Ctrl-C input is given to this process, what is the mode in which the signal handling routine executes?",
+      "answer": "kernel mode",
+      "topic": "Unix Signals",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "In Unix, the command to enable ____________ permission for file “myfile” by all is (Chmod + X myfile).",
+      "answer": "execution",
+      "topic": "Unix Permissions",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "The cron daemon is the ___________ tool for running commands on a pre-determined schedule.",
+      "answer": "standard",
+      "topic": "Unix Cron",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "Crontab for _____________ users are not stored.",
+      "answer": "individual",
+      "topic": "Unix Cron",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "________ daemon starts when the system boots and runs as long as the system is up.",
+      "answer": "cron",
+      "topic": "Unix Cron",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "In Unix, files can be protected by assigning each one a 9-bit mode called _______ bits.",
+      "answer": "right",
+      "topic": "Unix Permissions",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "A mode of _________ (octal) means that the owner can read and write the file, other members of the owner’s group can read it, and users can execute only.",
+      "answer": "641",
+      "topic": "Unix Permissions",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "A mode of _________ (octal) allows the owner to execute the file, but prohibits all other access.",
+      "answer": "100",
+      "topic": "Unix Permissions",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "Each i-node is _______ bytes long.",
+      "answer": "256",
+      "topic": "Unix File System",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "All the files and directories are stored in __________ blocks.",
+      "answer": "data",
+      "topic": "Unix File System",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "Which block contains the number of i-nodes, the number of disk blocks, and the start of the list of free disk blocks?",
+      "answer": "Super",
+      "topic": "Unix File System",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "Unix command ($ head-3 shortlist | tr ‘[a-z]’ ‘[A-Z]’) to change the case of first three lines of file “____________” from lower to upper",
+      "answer": "shortlist",
+      "topic": "Unix Commands",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "The linux command  Will create a block device if the user is root",
+      "answer": "mknod myfifo b 4 16",
+      "topic": "Linux Commands",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "UNIX provides three types of permissions * Read * Write * ____________ .",
+      "answer": "Execute",
+      "topic": "Unix Permissions",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "________ provides three sets of permissions * permission for owner * permission for group * permission for others.",
+      "answer": "UNIX",
+      "topic": "Unix Permissions",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "The shell command\nfind -name passwd -print\nis executed in /etc directory of a computer system running Unix. Which shell command will give the same information as the above command when executed in the same directory?",
+      "answer": "grep name passwd",
+      "topic": "Unix Shell Commands",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "Which command will rename a file x to file y in a Unix system without using remove method?",
+      "answer": "mv x,y",
+      "topic": "Unix Commands",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "cp x, y (rm x) command is used to _______ a file x to file y in a Unix system.",
+      "answer": "rename",
+      "topic": "Unix Commands",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "Two shared resources R₁ and R₂ are used by processes P₁ and P₂. Each process has a certain priority for accessing each resource. Let Tᵢⱼ denote the priority of Pᵢ for accessing Rⱼ. A process Pᵢ can snatch a resource Rₕ from process Pⱼ if Tᵢₖ is greater than Tⱼₖ. Given the following: 1) T12>T22  2) T11<T21 Which of the following conditions ensures that P₁ and P₂ can never deadlock?",
+      "answer": "T12>T22",
+      "topic": "Deadlock",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "Two shared resources R₁ and R₂ are used by processes P₁ and P₂. Each process has a certain priority for accessing each resource. Let Tᵢⱼ denote the priority of Pᵢ for accessing Rⱼ. A process Pᵢ can snatch a resource Rₕ from process Pⱼ if Tᵢₖ is greater than Tⱼₖ. Given the following: 1. T11<T21  2. T12<T22 Which of the following conditions ensures that P₁ and P₂ can never deadlock?",
+      "answer": "T12<T22",
+      "topic": "Deadlock",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "An operating system contains 3 user processes each requiring 2 units of resource R. The minimum number of units of R such that no deadlocks will ever arise is",
+      "answer": "5",
+      "topic": "Deadlock",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "Release all resources before requesting a new resource. The following is a valid deadlock ___________ scheme?",
+      "answer": "Prevention",
+      "topic": "Deadlock Prevention",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "In a deadlock prevention scheme, Never request a resource _______ releasing any resource?",
+      "answer": "after",
+      "topic": "Deadlock Prevention",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "In deadlock prevention scheme, Request and all required resources be allocated _________ execution.",
+      "answer": "before",
+      "topic": "Deadlock Prevention",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "Consider the following snapshot of a system running n processes. Process i is holding Xi instances of a resource R, 1 <= i <= n. currently, all instances of R are occupied. Further, for all i, process i has placed a request for an additional Yi instances while holding the Xi instances it already has. There are exactly two processes p and q such that Yp = Yq = 0. What is the necessary condition to guarantee that the system is not approaching a deadlock?",
+      "answer": "Xp + Xq >= min (Yk) where k != p and k != q",
+      "topic": "Deadlock",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "In deadlock _______________ , the request for resources is always granted if the resulting state is safe.",
+      "answer": "prevention",
+      "topic": "Deadlock Prevention & Avoidance",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "Deadlock avoidance is _________ restrictive than deadlock prevention.",
+      "answer": "less",
+      "topic": "Deadlock Prevention & Avoidance",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "Deadlock ________________ requires knowledge of resource requirements a priori.",
+      "answer": "avoidance",
+      "topic": "Deadlock Prevention & Avoidance",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "Three concurrent processes X, Y, and Z execute three different code segments that access and update certain shared variables. Process X executes the P operation (i.e., wait) on semaphores a, b and c; process Y executes the P operation on semaphores b, c and d; process Z executes the P operation on semaphores c, d, and a before entering the respective code segments. After completing the execution of its code segment, each process invokes the V operation (i.e., signal) on its semaphores. All semaphores are binary semaphores initialized to one. X: P(b)P(a)P(c) Y:P(b)P(c)P(d) Z:______________ represents a deadlockfree order of invoking the P operations by the processes.",
+      "answer": "P(a)P(c)P(d)",
+      "topic": "Deadlock",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "In deadlock avoidance, the request for resources is always granted if ______________ state is safe",
+      "answer": "resulting",
+      "topic": "Deadlock Prevention & Avoidance",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "Deadlock prevention is ________ restrictive than deadlock avoidance",
+      "answer": "more",
+      "topic": "Deadlock Prevention & Avoidance",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "Consider a system having ‘m’ resources of the same type. The resources are shared by 3 processes A, B, C, which have peak time demands of 3, 4, 6 respectively. The minimum value of ‘m’ that ensures that deadlock will never occur is",
+      "answer": "11",
+      "topic": "Deadlock",
+      "difficulty": "intermediate"
+    },
+    {
+      "type": "short_answer",
+      "question": "What is the minimum number of resources required to ensure that deadlock will never occur, if there are currently three processes P1, P2 and P3 running in a system whose maximum demand for the resources of same type are 3, 4, and 5 respectively.",
+      "answer": "10",
+      "topic": "Deadlock",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "A critical section is a program segment where __________ resources are accessed",
+      "answer": "shared",
+      "difficulty": "beginner",
+      "topic": "Operating Systems - Concurrency"
+    },
+    {
+      "type": "short_answer",
+      "question": "A counting semaphore was initialized to 10. Then 6 P (wait) operations and 4 V (signal) operations were completed on this semaphore. The resulting value of the semaphore is",
+      "answer": "8",
+      "difficulty": "beginner",
+      "topic": "Operating Systems - Semaphores"
+    },
+    {
+      "type": "short_answer",
+      "question": "A system has 6 identical resources and N processes competing for them. Each process can request atmost 2 resources. Which one of the following values of N could lead to a deadlock?",
+      "answer": "4",
+      "difficulty": "beginner",
+      "topic": "Operating Systems - Deadlock"
+    },
+    {
+      "type": "short_answer",
+      "question": "A system contains three programs and each requires three tape units for its operation. The minimum number of tape units which the system must have such that deadlocks never arise is ____.",
+      "answer": "7",
+      "difficulty": "advanced",
+      "topic": "Operating Systems - Deadlock"
+    },
+    {
+      "type": "short_answer",
+      "question": "Consider a system having \"n\" resources of same type. These resources are shared by 3 processes, A, B, C. These have peak demands of 3, 4, and 6 respectively. For what value of \"n\" deadlock won't occur",
+      "answer": "11",
+      "difficulty": "advanced",
+      "topic": "Operating Systems - Deadlock"
+    },
+    {
+      "type": "short_answer",
+      "question": "__________________ condition for deadlock processes claim exclusive control of the resources they require?",
+      "options": {
+        "a": "no preemption",
+        "b": "mutual exclusion",
+        "c": "circular wait",
+        "d": "hold and wait"
+      },
+      "answer": "mutual exclusion",
+      "difficulty": "advanced",
+      "topic": "Operating Systems - Deadlock"
+    },
+    {
+      "type": "short_answer",
+      "question": "Which UNIX command allows scheduling a program to be executed at the specifies time?",
+      "answer": "cron",
+      "difficulty": "beginner",
+      "topic": "Operating Systems - UNIX Commands"
+    },
+    {
+      "type": "short_answer",
+      "question": "A ______ file may be of the type of Device file, Regular file and Directory file.",
+      "answer": "unix",
+      "difficulty": "beginner",
+      "topic": "Operating Systems - UNIX"
+    },
+    {
+      "type": "short_answer",
+      "question": "The Unix Kernel maintains two key data structures related to processes, the process table and the _______________ .",
+      "answer": "user structure",
+      "difficulty": "advanced",
+      "topic": "Operating Systems - UNIX Kernel"
+    },
+    {
+      "type": "short_answer",
+      "question": "Which command is used to print all of the lines in file x that do not match the search string “abc”?",
+      "answer": "grep -vn “abc” x",
+      "topic": "Unix Commands - grep",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "“init” process in Unix is generally the parent of the ________ shell.",
+      "answer": "login",
+      "topic": "Unix Processes",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "Init forks and execs a ______________ process at every port connected to a terminal.",
+      "answer": "getty",
+      "topic": "Unix Processes",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "What is the PID of “init” process in Unix?",
+      "answer": "1",
+      "topic": "Unix Processes",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "Converting a primitive type data into its corresponding wrapper class object instance is called as ___________.",
+      "answer": "Autoboxing",
+      "topic": "Java - Wrapper Classes",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "_________________ is a static or compile time binding.",
+      "answer": "Overloading",
+      "topic": "OOP - Overloading vs Overriding",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "Which is the dynamic or runtime binding?",
+      "answer": "overriding",
+      "topic": "OOP - Overloading vs Overriding",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "The feature in object-oriented programming that allows the same operation to be carried out differently, depending on the object, is:",
+      "answer": "Polymorphism",
+      "topic": "OOP - Polymorphism",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "_________________ approach to databases are having the ability to develop more realistic models of the real world.",
+      "answer": "object-oriented",
+      "topic": "Object-Oriented Databases",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "Object-oriented approach to databases are having the ability to develop _____________ using natural language approaches.",
+      "answer": "databases",
+      "topic": "Object-Oriented Databases",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "A publicly derived class is a subtype of its __________ class.",
+      "answer": "base",
+      "topic": "OOP - Inheritance",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "______________ provides for code reuse.",
+      "answer": "Inheritance",
+      "topic": "OOP - Inheritance",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "__________________ and encapsulation are fundamental principles that underlie the object oriented approach to software development.",
+      "answer": "Abstraction",
+      "topic": "OOP - Abstraction & Encapsulation",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "State, Behaviour and Identity characteristics associated with objects (True/False).",
+      "answer": "True",
+      "topic": "OOP - Object Properties",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "Polymorphism in the presence of ___________ is an essential features of object oriented language.",
+      "answer": "inheritance",
+      "topic": "OOP - Features",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "Abstraction and ________________ are essential features of object oriented language.",
+      "answer": "encapsulation",
+      "topic": "OOP - Features",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "Which feature of OOP indicates code reusability?",
+      "answer": "Inheritance",
+      "topic": "OOP - Code Reusability",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "Which language supports polymorphism but not the classes?",
+      "answer": "Ada",
+      "topic": "Programming Languages",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "______________ is a code optimization technique that avoids tests at every iteration of the loop.",
+      "answer": "Loop unrolling",
+      "topic": "Code Optimization",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "Given i = 0, j = 1, k = -1 x = 0.5, y = 0.0 What is the output of the following expression in C language ? x * y < i + j || k",
+      "answer": "1",
+      "topic": "C Language Expressions",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "_______________________ operators cannot be overloaded in C/C++?",
+      "answer": "Structure reference",
+      "topic": "C/C++ Operators",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "In C, How many minimum extra variables are used to swap two integers.?",
+      "answer": "0",
+      "topic": "C Language - Swapping Variables",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "Suppose a C program has floating constant 1.414, the best way to convert this as \"float\" data type as 1.414f or 1.414F.(True/False)",
+      "answer": "True",
+      "topic": "C Language - Data Types",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "In C, sizes of an integer and a pointer must be same.(True/False)",
+      "answer": "False",
+      "topic": "C Language - Data Types",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "const and volatile are independent i.e. it’s possible that a variable is defined as both const and volatile.(True/False)",
+      "answer": "True",
+      "topic": "C Language - Qualifiers",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "What is the correct function definition along with storage-class specifier in C language?",
+      "answer": "int fun(register int arg)",
+      "topic": "C Language - Storage Class",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "___________ can be used to alias both compound data types and pointer to these compound types.",
+      "answer": "typedef",
+      "topic": "C Language - Typedef",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "goto, continue, break, return are correct with respect to “_________ Statements” in C?",
+      "answer": "Jump",
+      "topic": "C Language - Jump Statements",
+      "difficulty": "beginner"
+    },
+    {
+      "type": "short_answer",
+      "question": "______________ can be used in \"for\", \"while\" and \"do-while\" loop body and only can be used in \"switch\" body.",
+      "answer": "break",
+      "topic": "C Language - Loop Control Statements",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "What datatypes can be used in \"switch\" control expression.",
+      "answer": "int, char",
+      "topic": "C Language - Switch Statement",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "In the context of modulo operation (i.e. remainder on division) for floating point (say 2.1 and 1.1), ______________ is the result of module operation.",
+      "answer": "fmod(2.1,1.1)",
+      "topic": "C Language - Modulo Operation",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "In C program what is the floating constant?",
+      "answer": "1.414",
+      "topic": "C Language - Data Types",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "unsigned long long int\" is a valid data type.(True/False)",
+      "answer": "True",
+      "topic": "C Language - Data Types",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "A program attempts to generate as many permutations as possible of the string, 'abcd' by pushing the characters a, b, c, d in the same order onto a stack, but it may pop off the top character at any time. Which one of the following strings CANNOT be generated using this program?",
+      "answer": "cabd",
+      "topic": "Stack - Permutations",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "Let x be an integer which can take a value of 0 or 1. The statement if(x ==0) x = 1; else x = 0; is equivalent to which one of the following?",
+      "answer": "x=1-x",
+      "topic": "C Language - Conditional Statements",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "As per C language standard, which of the followings is not keyword? Pick a number. (1.auto 2.make 3.sizeof)",
+      "answer": "2",
+      "topic": "C Language - Keywords",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "Why is the ____ operator used with scanf() when reading integer values to store the input at the variable’s memory address.",
+      "answer": "&",
+      "topic": "C Language - Pointers and Scanf",
+      "difficulty": "advanced"
+    },
+    {
+      "type": "short_answer",
+      "question": "For a given integer, which operator can be used to “reset” a particular bit respectively?",
+      "answer": "&",
+      "topic": "C Language - Bitwise Operators",
+      "difficulty": "advanced"
+    }
+  ]
+}
