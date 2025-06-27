@@ -1,0 +1,198 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SmartQuiz API Schemas (Updated for Final I/O)",
+  "definitions": {
+    "QuizGenerationRequest": {
+      "properties": {
+        "goal": {
+          "example": "Amazon SDE",
+          "title": "Goal",
+          "type": "string"
+        },
+        "num_questions": {
+          "example": 5,
+          "exclusiveMinimum": 0,
+          "title": "Num Questions",
+          "type": "integer"
+        },
+        "difficulty": {
+          "example": "intermediate",
+          "title": "Difficulty",
+          "type": "string"
+        },
+        "topic": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional: The specific topic (e.g., 'Data Structures', 'SQL').",
+          "example": null,
+          "title": "Topic"
+        },
+        "type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Optional: Filter by question type: 'mcq' or 'short_answer'. If omitted, a mix is generated.",
+          "example": null,
+          "title": "Type"
+        }
+      },
+      "required": [
+        "goal",
+        "difficulty"
+      ],
+      "title": "QuizGenerationRequest",
+      "type": "object"
+    },
+    "QuestionResponse": {
+      "properties": {
+        "type": {
+          "title": "Type",
+          "type": "string"
+        },
+        "question": {
+          "title": "Question",
+          "type": "string"
+        },
+        "options": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Options"
+        },
+        "answer": {
+          "title": "Answer",
+          "type": "string"
+        },
+        "difficulty": {
+          "title": "Difficulty",
+          "type": "string"
+        },
+        "topic": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Topic"
+        }
+      },
+      "required": [
+        "type",
+        "question",
+        "answer",
+        "difficulty"
+      ],
+      "title": "QuestionResponse",
+      "type": "object"
+    },
+    "QuizResponse": {
+      "$defs": {
+        "QuestionResponse": {
+          "properties": {
+            "type": {
+              "title": "Type",
+              "type": "string"
+            },
+            "question": {
+              "title": "Question",
+              "type": "string"
+            },
+            "options": {
+              "anyOf": [
+                {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Options"
+            },
+            "answer": {
+              "title": "Answer",
+              "type": "string"
+            },
+            "difficulty": {
+              "title": "Difficulty",
+              "type": "string"
+            },
+            "topic": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Topic"
+            }
+          },
+          "required": [
+            "type",
+            "question",
+            "answer",
+            "difficulty"
+          ],
+          "title": "QuestionResponse",
+          "type": "object"
+        }
+      },
+      "properties": {
+        "quiz_id": {
+          "title": "Quiz Id",
+          "type": "string"
+        },
+        "goal": {
+          "title": "Goal",
+          "type": "string"
+        },
+        "questions": {
+          "items": {
+            "$ref": "#/$defs/QuestionResponse"
+          },
+          "title": "Questions",
+          "type": "array"
+        }
+      },
+      "required": [
+        "quiz_id",
+        "goal",
+        "questions"
+      ],
+      "title": "QuizResponse",
+      "type": "object"
+    }
+  }
+}
