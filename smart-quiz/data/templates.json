@@ -1,0 +1,130 @@
+[
+  {
+  "template_id": "mcq_identify_command_for_function",
+  "description": "MCQ: Which item is used for a given function?",
+  "source_data_requirements": ["function_description", "correct_item_name", "topic", "difficulty", "original_options_list"],
+  "t5_prompt_structure": "generate a multiple choice question for a {difficulty} {topic} quiz. A common task is '{function_description}'. Ask: Which of the following is typically used to achieve '{function_description}'? The correct answer is '{correct_item_name}'.",
+  "answer_slot": "correct_item_name",
+  "question_type": "mcq"
+  },
+  {
+    "template_id": "sa_define_concept_whatis",
+    "description": "Generates 'What is [concept]?' or 'Define [concept]' for SA.",
+    "target_topic_keywords": [],
+    "target_difficulty": null,
+    "source_data_requirements": ["concept_name", "full_definition", "topic", "difficulty"],
+    "t5_prompt_structure": "generate a short answer question for a {difficulty} {topic} quiz that asks for the definition or explanation of '{concept_name}'. The expected answer should be based on: {full_definition}",
+    "answer_slot": "full_definition",
+    "question_type": "short_answer"
+  },
+  {
+    "template_id": "mcq_identify_term_for_definition",
+    "description": "MCQ: Given a definition, identify the correct term.",
+    "target_topic_keywords": [],
+    "target_difficulty": null,
+    "source_data_requirements": ["defined_term", "definition_statement", "topic", "difficulty", "original_options_list"],
+    "t5_prompt_structure": "generate a multiple choice question for a {difficulty} {topic} quiz. The following definition is provided: '{definition_statement}'. Ask: What term best describes this? The correct answer is '{defined_term}'.",
+    "answer_slot": "defined_term",
+    "question_type": "mcq"
+  },
+  {
+    "template_id": "sa_purpose_of_item",
+    "description": "SA: Asks for the purpose or function of an item (command, tool, concept).",
+    "target_topic_keywords": [],
+    "target_difficulty": null,
+    "source_data_requirements": ["item_name", "item_purpose", "topic", "difficulty"],
+    "t5_prompt_structure": "generate a short answer question for a {difficulty} {topic} quiz about the primary purpose of '{item_name}'. Its purpose is: {item_purpose}",
+    "answer_slot": "item_purpose",
+    "question_type": "short_answer"
+  },
+  {
+    "template_id": "mcq_item_for_function",
+    "description": "MCQ: Which item (command, algorithm, etc.) is used for a given function?",
+    "target_topic_keywords": [],
+    "target_difficulty": null,
+    "source_data_requirements": ["function_description", "correct_item_name", "topic", "difficulty", "original_options_list"],
+    "t5_prompt_structure": "generate a multiple choice question for a {difficulty} {topic} quiz. A common task is '{function_description}'. Ask: Which of the following is typically used to achieve '{function_description}'? The correct answer is '{correct_item_name}'.",
+    "answer_slot": "correct_item_name",
+    "question_type": "mcq"
+  },
+  {
+    "template_id": "mcq_true_statement_identification",
+    "description": "MCQ: Asks to identify the true statement about a concept.",
+    "target_topic_keywords": [],
+    "target_difficulty": null,
+    "source_data_requirements": ["concept_subject", "a_true_statement", "topic", "difficulty", "original_options_list"],
+    "t5_prompt_structure": "generate a multiple choice question for a {difficulty} {topic} quiz regarding '{concept_subject}'. A true statement about it is: '{a_true_statement}'. The question should ask users to identify the true statement.",
+    "answer_slot": "a_true_statement",
+    "question_type": "mcq"
+  },
+  {
+    "template_id": "sa_fill_in_the_blank",
+    "description": "SA: Asks to complete a statement by filling in a blank.",
+    "target_topic_keywords": [],
+    "target_difficulty": null,
+    "source_data_requirements": ["statement_with_blank_token", "term_for_blank", "topic", "difficulty"],
+    "t5_prompt_structure": "generate a short answer question for a {difficulty} {topic} quiz. Provide the statement: '{statement_with_blank_token}' and ask the user to fill in the blank. The correct answer for the blank is '{term_for_blank}'.",
+    "answer_slot": "term_for_blank",
+    "question_type": "short_answer"
+  },
+  {
+    "template_id": "mcq_fill_in_the_blank",
+    "description": "MCQ: Asks to choose the correct term to fill a blank in a statement.",
+    "target_topic_keywords": [],
+    "target_difficulty": null,
+    "source_data_requirements": ["statement_with_blank_token", "correct_fill_term", "topic", "difficulty", "original_options_list"],
+    "t5_prompt_structure": "generate a multiple choice question for a {difficulty} {topic} quiz. Present the statement with a blank: '{statement_with_blank_token}'. Ask the user to select the term that best fills the blank. The correct option is '{correct_fill_term}'.",
+    "answer_slot": "correct_fill_term",
+    "question_type": "mcq"
+  },
+  {
+    "template_id": "sa_scenario_outcome_calculation",
+    "description": "SA: Given a scenario or parameters, ask for a specific outcome or calculated value.",
+    "target_topic_keywords": [],
+    "target_difficulty": null,
+    "source_data_requirements": ["scenario_details", "calculated_result_or_outcome", "topic", "difficulty"],
+    "t5_prompt_structure": "generate a short answer question for a {difficulty} {topic} quiz. Present the following scenario or setup: '{scenario_details}'. Ask for the specific result or value. The correct answer is: {calculated_result_or_outcome}.",
+    "answer_slot": "calculated_result_or_outcome",
+    "question_type": "short_answer"
+  },
+  {
+    "template_id": "mcq_scenario_best_choice",
+    "description": "MCQ: Given a scenario, choose the best option/approach/result.",
+    "target_topic_keywords": [],
+    "target_difficulty": null,
+    "source_data_requirements": ["scenario_details", "optimal_choice", "topic", "difficulty", "original_options_list"],
+    "t5_prompt_structure": "generate a multiple choice question for a {difficulty} {topic} quiz. Scenario: '{scenario_details}'. Ask the user to select the most appropriate option or outcome. The correct choice is '{optimal_choice}'.",
+    "answer_slot": "optimal_choice",
+    "question_type": "mcq"
+  },
+  {
+    "template_id": "sa_complexity_question",
+    "description": "SA: Asks about the time/space complexity of an algorithm/operation.",
+    "target_topic_keywords": ["algorithms", "data structures", "complexity"],
+    "target_difficulty": null,
+    "source_data_requirements": ["item_for_complexity", "complexity_value", "topic", "difficulty"],
+    "t5_prompt_structure": "generate a short answer question for a {difficulty} {topic} quiz asking for the time or space complexity of '{item_for_complexity}'. The correct complexity is '{complexity_value}'.",
+    "answer_slot": "complexity_value",
+    "question_type": "short_answer"
+  },
+  {
+    "template_id": "mcq_property_of_concept",
+    "description": "MCQ: Asks about a specific property or characteristic of a concept/data structure/algorithm.",
+    "target_topic_keywords": [],
+    "target_difficulty": null,
+    "source_data_requirements": ["concept_name", "specific_property_statement", "topic", "difficulty", "original_options_list"],
+    "t5_prompt_structure": "generate a multiple choice question for a {difficulty} {topic} quiz about '{concept_name}'. A key property is that '{specific_property_statement}'. Ask the user to identify this property or a related true statement.",
+    "answer_slot": "specific_property_statement",
+    "question_type": "mcq"
+  },
+  {
+    "template_id": "sa_code_interpretation_output",
+    "description": "SA: Given a small code snippet (conceptual from your Q bank), ask for its output.",
+    "target_topic_keywords": ["c language", "java", "unix commands", "linux commands"],
+    "target_difficulty": null,
+    "source_data_requirements": ["code_snippet_description", "expected_output", "topic", "difficulty"],
+    "t5_prompt_structure": "generate a short answer question for a {difficulty} {topic} quiz. Present the following code or command description: '{code_snippet_description}'. Ask what its output or result would be. The correct output/result is '{expected_output}'.",
+    "answer_slot": "expected_output",
+    "question_type": "short_answer"
+  }
+]
